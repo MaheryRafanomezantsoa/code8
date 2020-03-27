@@ -1,9 +1,13 @@
 {
+  "homepage": "https://maheryrafanomezantsoa.github.io/code8",
+
   "name": "code",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "watch": "node-sass --watch css/style.scss css/style.css",
     "build": "nodemon --exec babel-node ./js/* ",
     "start": "concurrently \"npm run watch\" \"npm run build\""
@@ -11,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "2.2.0",
     "concurrently": "^5.0.0",
     "gsap": "^3.0.1",
     "node-sass": "^4.13.0"
