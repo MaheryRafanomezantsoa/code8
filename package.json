@@ -6,8 +6,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    
+    
     "watch": "node-sass --watch css/style.scss css/style.css",
     "build": "nodemon --exec babel-node ./js/* ",
     "start": "concurrently \"npm run watch\" \"npm run build\""
